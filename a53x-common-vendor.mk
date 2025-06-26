@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/pa_daemon_teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_teegris.rc \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
+    vendor/samsung/a53x-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/a53x-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
@@ -143,6 +144,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.keymint-V1-ndk_platform \
     vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    vaultkeeper_manifest.xml \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.security.keymint-service.samsung \
     gps \
