@@ -39,15 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_common.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_common.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t_wlan_t.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_wlan_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_sw.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_t.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_wlan_t_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_wlan_t_sw.hcf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/slsi_reg_database.bin
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
