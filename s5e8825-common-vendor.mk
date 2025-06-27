@@ -82,8 +82,6 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsec2lsi_conversion \
     libsensorlistener \
-    libskeymint10device \
-    libskeymint_cli \
     libssl-tm \
     libswlme \
     libuniapi \
@@ -108,7 +106,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cass \
     android.hardware.drm@1.4-service.widevine \
-    android.hardware.security.keymint-service.samsung \
     gps \
     gpsd \
     rild \
