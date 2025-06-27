@@ -54,9 +54,12 @@ PRODUCT_PACKAGES += \
     gatekeeper.s5e8825 \
     vulkan.mali \
     libSEF.quram \
+    libexynoscamera_cnr_plugin \
+    libexynoscamera_plugin \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
+    libswcnr \
     libteecl \
     libuuid_vendor \
     sensors.grip \
@@ -77,7 +80,6 @@ PRODUCT_PACKAGES += \
     libcrypto-tm \
     libengmode_client \
     libexynoscamera_merta_plugin \
-    libexynoscamera_plugin \
     libexynoscamera_swlme_plugin \
     libexynoscamera_vpl_plugin \
     libfloatingfeature \
