@@ -61,9 +61,7 @@ PRODUCT_PACKAGES += \
     libsecaudiocoreutils \
     libspatializerparamstorage \
     android.hardware.gnss@2.1-impl \
-    camera.s5e8825 \
     vendor.samsung.hardware.gnss@2.1-impl \
-    libMERTA \
     libSemDataProps \
     libSemTelephonyProps \
     libVendorSemDataProps \
@@ -71,19 +69,13 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcrypto-tm \
     libengmode_client \
-    libexynoscamera_merta_plugin \
-    libexynoscamera_swlme_plugin \
-    libexynoscamera_vpl_plugin \
     libfloatingfeature \
     libhwjsqz \
-    liblmecpu \
     libprotobuf-cpp-full-21.7 \
     libril_sem \
     libsec-ril \
-    libsec2lsi_conversion \
     libsensorlistener \
     libssl-tm \
-    libswlme \
     libuniapi \
     libuniplugin \
     libvkmanager_vendor \
