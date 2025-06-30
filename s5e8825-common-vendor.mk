@@ -16,7 +16,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
@@ -46,12 +48,16 @@ PRODUCT_PACKAGES += \
     gatekeeper.s5e8825 \
     vulkan.mali \
     libSEF.quram \
+    libegis_fp_normal_sensor_test \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
+    libgf_in_system_lib \
+    libqfp_sensortest \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
     libswcnr \
+    libsynaFpSensorTestNwd \
     libteecl \
     libuuid_vendor \
     sensors.grip \

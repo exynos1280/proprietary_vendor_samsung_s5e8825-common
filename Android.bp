@@ -186,6 +186,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libegis_fp_normal_sensor_test",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libegis_fp_normal_sensor_test.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libexynoscamera_cnr_plugin",
     owner: "samsung",
     strip: {
@@ -261,6 +294,84 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_in_system_lib",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgf_in_system_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_in_system_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqfp_sensortest",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqfp_sensortest.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqfp_sensortest.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -431,6 +542,39 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsynaFpSensorTestNwd",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsynaFpSensorTestNwd.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsynaFpSensorTestNwd.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
