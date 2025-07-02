@@ -1444,56 +1444,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSemDataProps",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSemDataProps.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSemTelephonyProps",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSemTelephonyProps.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libVendorSemDataProps",
     owner: "samsung",
     strip: {
@@ -1670,32 +1620,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-21.7",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.7.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libril_sem",
     owner: "samsung",
     strip: {
@@ -1730,6 +1654,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "librilutils",
                 "libutils",
+                "libfloatingfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -1766,8 +1691,9 @@ cc_prebuilt_library_shared {
                 "libz",
                 "libutils",
                 "libjsoncpp",
-                "libSemTelephonyProps",
-                "libSemDataProps",
+                "libVendorSemTelephonyProps",
+                "libVendorSemDataProps",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
@@ -1777,7 +1703,6 @@ cc_prebuilt_library_shared {
                 "libfloatingfeature",
                 "libsemnativecarrierfeature",
                 "libc++",
-                "libprotobuf-cpp-full-21.7",
                 "libc",
                 "libm",
                 "libdl",
