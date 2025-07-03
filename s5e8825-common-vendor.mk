@@ -8,7 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tabin \
     vendor/samsung/s5e8825-common/proprietary/vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/0706000000000000000000000000004d.tlbin \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/pa_daemon_teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_teegris.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/samsung.hardware.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/samsung.hardware.media.c2@1.0-service.rc \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
@@ -37,6 +38,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
+    vendor/samsung/s5e8825-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
@@ -45,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/samsung/s5e8825-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140.bin \
     vendor/samsung/s5e8825-common/proprietary/vendor/etc/wifi/mx140_t.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_t.bin
@@ -53,6 +56,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     gatekeeper.s5e8825 \
+    vendor.samsung.hardware.audio@1.0-impl \
     vulkan.mali \
     libExynosC2ComponentStore \
     libExynosC2H264Dec \
@@ -62,14 +66,24 @@ PRODUCT_PACKAGES += \
     libExynosC2Vp8Dec \
     libExynosC2Vp8Enc \
     libSEF.quram \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
+    lib_SoundAlive_play_plus_ver400 \
+    lib_SoundBooster_ver1100 \
     libegis_fp_normal_sensor_test \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
+    libfloatingfeature \
     libgf_in_system_lib \
+    libprofileparamstorage \
     libqfp_sensortest \
+    libsecaudiocoreutils \
+    libsecaudioinfo \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
+    libspatializerparamstorage \
+    libspeakercalibration \
     libswcnr \
     libsynaFpSensorTestNwd \
     libteecl \
@@ -77,17 +91,38 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
-    libprofileparamstorage \
-    libsecaudiocoreutils \
-    libspatializerparamstorage \
+    libaudioeffectoffload \
+    libaudiosaplus_sec \
+    libmyspace \
+    libsamsungSoundbooster_plus \
+    vendor.samsung.hardware.audio@1.0 \
+    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
+    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
+    audio.primary.s5e8825 \
+    sound_trigger.primary.s5e8825 \
+    libSamsungPostProcessConvertor \
+    lib_SamsungRec_07010 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_soundaliveresampler \
+    libaboxpcmdump \
+    libalsautils_sec \
+    libaudio-ril \
+    libaudioparamupdate \
+    libaudioproxy2 \
+    libaudioroute.s5e8825 \
+    libdatamod \
+    liblastaboxmsg \
+    librecordalive \
+    libtinyalsa.s5e8825 \
+    libswdap \
     android.hardware.gnss@2.1-impl \
+    libsecaudiohal_aidl \
     vendor.samsung.hardware.gnss@2.1-impl \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     libc++_shared \
     libcrypto-tm \
     libengmode_client \
-    libfloatingfeature \
     libhwjsqz \
     libril_sem \
     libsec-ril \
@@ -98,6 +133,7 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libwrappergps \
     libwvhidl \
+    vendor.samsung.hardware.audio-V1-ndk_platform \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.keymint-V1-ndk_platform \
@@ -111,6 +147,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.thermal@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     sec_c2_manifest_default0_1_0.xml \
+    secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
@@ -120,6 +157,7 @@ PRODUCT_PACKAGES += \
     gpsd \
     rild \
     samsung.hardware.media.c2@1.0-service \
+    secaudiohalaidl \
     vendor.samsung.hardware.gnss@2.1-service \
     tzdaemon \
     tzts_daemon \
