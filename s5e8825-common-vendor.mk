@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     libegis_fp_normal_sensor_test \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
+    libexynosv4l2 \
     libfloatingfeature \
     libgf_in_system_lib \
     libprofileparamstorage \
