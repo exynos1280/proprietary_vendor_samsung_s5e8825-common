@@ -14,29 +14,8 @@
 eventfd: 1
 eventfd2: 1
 mmap: 1
-getuid: 1
-fstat: 1
-fstatfs: 1
-newfstatat: 1
-getrlimit: 1
-dup: 1
-dup2: 1
-dup3: 1
-epoll_create1: 1
-epoll_ctl: 1
-epoll_wait: 1
-epoll_pwait: 1
-mremap: arg3 == 3 || arg3 == MREMAP_MAYMOVE
+epoll_create1:1
+epoll_ctl:1
+epoll_wait:1
+epoll_pwait:1
 getppid: 1
-
-# filmgrain
-sched_getaffinity: 1
-sched_setaffinity: 1
-shutdown: 1
-getsockopt: 1
-sysinfo: 1
-statfs: 1
-unlinkat: 1
-bind: 1
-uname: 1
-getcwd: 1
