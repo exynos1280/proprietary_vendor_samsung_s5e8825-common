@@ -323,6 +323,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/lib_SoundAlive_play_plus_ver400.so",
             ],
             shared_libs: [
+                "liblog-samsung",
                 "libc",
                 "libm",
                 "libdl",
@@ -333,6 +334,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver400.so",
             ],
             shared_libs: [
+                "liblog-samsung",
                 "libc",
                 "libm",
                 "libdl",
@@ -561,6 +563,41 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblog-samsung",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/liblog-samsung.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblog-samsung.so",
+            ],
+            shared_libs: [
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -1019,6 +1056,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1761,6 +1799,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libaboxpcmdump.so",
             ],
             shared_libs: [
+                "libtinyalsa.s5e8825",
+                "libaudioroute.s5e8825",
                 "liblog",
                 "libcutils",
                 "libtinyalsa",
@@ -1849,6 +1889,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libaudioparamupdate.so",
             ],
             shared_libs: [
+                "libtinyalsa.s5e8825",
+                "libaudioroute.s5e8825",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -1878,6 +1920,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libaudioproxy2.so",
             ],
             shared_libs: [
+                "libtinyalsa.s5e8825",
+                "libaudioroute.s5e8825",
                 "liblog",
                 "libcutils",
                 "libprocessgroup",

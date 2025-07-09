@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
     libexynoscamera_plugin \
     libfloatingfeature \
     libgf_in_system_lib \
+    liblog-samsung \
     libprofileparamstorage \
     libqfp_sensortest \
     libsecaudiocoreutils \
