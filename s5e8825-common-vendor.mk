@@ -57,14 +57,11 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver400 \
     lib_SoundBooster_ver1100 \
-    libegis_fp_normal_sensor_test \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
-    libgf_in_system_lib \
     liblog-samsung \
     libprofileparamstorage \
-    libqfp_sensortest \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecnativefeature \
@@ -73,7 +70,6 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libspeakercalibration \
     libswcnr \
-    libsynaFpSensorTestNwd \
     libteecl \
     libuuid_vendor \
     sensors.grip \
@@ -110,12 +106,16 @@ PRODUCT_PACKAGES += \
     libVendorSemTelephonyProps \
     libc++_shared \
     libcrypto-tm \
+    libegis_fp_normal_sensor_test \
     libengmode_client \
+    libgf_in_system_lib \
     libhwjsqz \
+    libqfp_sensortest \
     libril_sem \
     libsec-ril \
     libsensorlistener \
     libssl-tm \
+    libsynaFpSensorTestNwd \
     libuniapi \
     libuniplugin \
     libvkmanager_vendor \
