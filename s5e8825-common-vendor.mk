@@ -52,10 +52,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.audio@1.0-impl \
     vulkan.mali \
     libSEF.quram \
-    lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
-    lib_SoundAlive_play_plus_ver400 \
-    lib_SoundBooster_ver1100 \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
@@ -75,9 +71,6 @@ PRODUCT_PACKAGES += \
     sensors.inputvirtual \
     sensors.sensorhub \
     libaudioeffectoffload \
-    libaudiosaplus_sec \
-    libmyspace \
-    libsamsungSoundbooster_plus \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
