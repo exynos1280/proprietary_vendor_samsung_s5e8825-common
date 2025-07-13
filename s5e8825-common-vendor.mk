@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     rild \
     secaudiohalaidl \
     vendor.samsung.hardware.gnss@2.1-service \
+    secril_config_svc \
     tzdaemon \
     tzts_daemon \
     vendor.samsung.hardware.security.proca@2.0-service
