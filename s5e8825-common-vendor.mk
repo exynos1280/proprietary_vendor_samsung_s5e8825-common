@@ -52,8 +52,6 @@ PRODUCT_PACKAGES += \
     libfloatingfeature \
     liblog-samsung \
     libprofileparamstorage \
-    libsecaudiocoreutils \
-    libsecaudioinfo \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
@@ -64,7 +62,8 @@ PRODUCT_PACKAGES += \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
-    libaudioeffectoffload \
+    libsecaudiocoreutils \
+    libsecaudioinfo \
     libswdap \
     android.hardware.gnss@2.1-impl \
     vendor.samsung.hardware.gnss@2.1-impl \
