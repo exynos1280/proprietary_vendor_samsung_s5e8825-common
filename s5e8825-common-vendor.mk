@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
     libexynoscamera_cnr_plugin \
     libexynoscamera_plugin \
     libfloatingfeature \
-    liblog-samsung \
     libprofileparamstorage \
     libsecnativefeature \
     libsecril-client \
