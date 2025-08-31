@@ -316,7 +316,7 @@
   </preset>
   <profile id="0" name="Dynamic" group="default">
     <data>
-      <mi-dv-leveler-steering-enable value="true"/>
+      <mi-dv-leveler-steering-enable value="false"/>
       <mi-ieq-steering-enable value="true"/>
       <mi-surround-compressor-steering-enable value="true"/>
       <mi-adaptive-virtualizer-steering-enable value="true"/>
@@ -336,7 +336,7 @@
         <peak-value value="240"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
-        <volmax-boost value="46"/>
+        <volmax-boost value="73"/>
         <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="0"/>
         <volume-leveler-in-target value="-256"/>
@@ -432,7 +432,7 @@
         <dialog-enhancer-amount value="5"/>
         <dialog-enhancer-ducking value="0"/>
         <mi-virtualizer-binaural-steering-enable value="false"/>
-        <peak-value value="256"/>
+        <peak-value value="240"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="64"/>
         <volmax-boost value="85"/>
@@ -1210,26 +1210,26 @@
     <device_id id="speaker_landscape" endpoint_port="internal_speaker"/>
     <data>
       <audio-optimizer-bands>
-        <band_optimizer frequency="47" gain_left="-111" gain_right="-16"/>
-        <band_optimizer frequency="141" gain_left="-108" gain_right="-4"/>
-        <band_optimizer frequency="234" gain_left="-56" gain_right="3"/>
-        <band_optimizer frequency="328" gain_left="-136" gain_right="-4"/>
-        <band_optimizer frequency="469" gain_left="-112" gain_right="-4"/>
-        <band_optimizer frequency="656" gain_left="-84" gain_right="0"/>
-        <band_optimizer frequency="844" gain_left="-28" gain_right="0"/>
-        <band_optimizer frequency="1031" gain_left="-8" gain_right="-16"/>
-        <band_optimizer frequency="1313" gain_left="34" gain_right="-63"/>
-        <band_optimizer frequency="1688" gain_left="28" gain_right="16"/>
-        <band_optimizer frequency="2250" gain_left="-12" gain_right="8"/>
-        <band_optimizer frequency="3000" gain_left="-47" gain_right="-16"/>
-        <band_optimizer frequency="3750" gain_left="-63" gain_right="-140"/>
-        <band_optimizer frequency="4688" gain_left="-127" gain_right="-156"/>
-        <band_optimizer frequency="5813" gain_left="0" gain_right="-16"/>
-        <band_optimizer frequency="7125" gain_left="56" gain_right="32"/>
-        <band_optimizer frequency="9000" gain_left="60" gain_right="-16"/>
-        <band_optimizer frequency="11250" gain_left="60" gain_right="32"/>
-        <band_optimizer frequency="13875" gain_left="58" gain_right="30"/>
-        <band_optimizer frequency="19688" gain_left="32" gain_right="32"/>
+        <band_optimizer frequency="47" gain_left="-176" gain_right="-144"/>
+        <band_optimizer frequency="141" gain_left="-32" gain_right="-56"/>
+        <band_optimizer frequency="234" gain_left="-38" gain_right="-52"/>
+        <band_optimizer frequency="328" gain_left="-111" gain_right="-82"/>
+        <band_optimizer frequency="469" gain_left="-133" gain_right="-90"/>
+        <band_optimizer frequency="656" gain_left="-115" gain_right="-80"/>
+        <band_optimizer frequency="844" gain_left="-62" gain_right="-94"/>
+        <band_optimizer frequency="1031" gain_left="-58" gain_right="-81"/>
+        <band_optimizer frequency="1313" gain_left="-34" gain_right="-135"/>
+        <band_optimizer frequency="1688" gain_left="-12" gain_right="-50"/>
+        <band_optimizer frequency="2250" gain_left="-32" gain_right="-72"/>
+        <band_optimizer frequency="3000" gain_left="-46" gain_right="-76"/>
+        <band_optimizer frequency="3750" gain_left="-127" gain_right="-180"/>
+        <band_optimizer frequency="4688" gain_left="-182" gain_right="-178"/>
+        <band_optimizer frequency="5813" gain_left="-64" gain_right="-40"/>
+        <band_optimizer frequency="7125" gain_left="-8" gain_right="-40"/>
+        <band_optimizer frequency="9000" gain_left="28" gain_right="-90"/>
+        <band_optimizer frequency="11250" gain_left="28" gain_right="-68"/>
+        <band_optimizer frequency="13875" gain_left="25" gain_right="-42"/>
+        <band_optimizer frequency="19688" gain_left="-32" gain_right="-40"/>
       </audio-optimizer-bands>
       <regulator-tuning>
         <band_regulator frequency="47" threshold_low="-683" threshold_high="-491" isolated_band="true"/>
@@ -1275,7 +1275,7 @@
       <regulator-timbre-preservation value="12"/>
       <regulator-stress-amount value="240,240,96,96"/>
       <regulator-distortion-slope value="16"/>
-      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-32,5,10,0,1,-1600,0,-1120,-80,0,-64,39,54,64,1,-1600,0,-1120,-64,0,-64,43,49,64,1,-1600,0,-1120,-112,0,-64,55,62,64,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
+      <bass-mbdrc-tuning value="1,-1600,0,-1120,-400,0,-32,5,10,0,1,-1600,0,-1120,-80,0,-64,39,54,64,1,-1600,0,-1120,-64,0,-64,43,49,64,1,-1600,0,-1120,-112,0,-64,55,62,48,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0,1,-1600,0,-1120,-400,-240,0,5,10,0"/>
       <virtual-bass-mode value="3"/>
       <virtual-bass-overall-gain value="0"/>
       <virtual-bass-slope-gain value="0"/>
@@ -1294,12 +1294,12 @@
       <regulator-speaker-dist-enable value="true"/>
       <regulator-sibilance-suppress-enable value="true"/>
       <bass-mbdrc-enable value="true"/>
-      <virtual-bass-harmgains value="-142,48,16,48"/>
+      <virtual-bass-harmgains value="-160,48,16,48"/>
       <virtual-bass-hybgains value="0,-25,-320,-320,-320,-320"/>
       <virtual-bass-rolloff-gain value="0"/>
-      <virtual-bass-blend-linear-gain value="-18"/>
+      <virtual-bass-blend-linear-gain value="-14"/>
       <virtual-bass-mix-frequency value="100,1500"/>
-      <virtual-bass-compressor-tuning value="1,64,-320,96,32,50,50"/>
+      <virtual-bass-compressor-tuning value="1,79,-320,96,32,50,50"/>
     </data>
   </tuning>
   <tuning name="speaker_portrait" endpoint_type="speaker" mono_device="false" tuned_rate="48000" orientation="0" output_channels="2">
