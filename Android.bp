@@ -2123,7 +2123,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libxml2",
                 "libdapparamstorage",
