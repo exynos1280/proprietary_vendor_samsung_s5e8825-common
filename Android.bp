@@ -941,6 +941,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
+                "libc++",
                 "liblog",
                 "libc",
                 "libm",
