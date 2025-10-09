@@ -18,6 +18,9 @@
         <transport>hwbinder</transport>
     </hal>
     <hal override="true" format="aidl">
+        <name>android.hardware.radio.ims</name>
+    </hal>
+    <hal override="true" format="aidl">
         <name>android.hardware.radio.modem</name>
         <version>1</version>
         <interface>
