@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
     libqfp_sensortest \
     librecordalive \
     libril_sem \
-    libsec-ril \
+    libsec-ril-impl \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecnativefeature \
